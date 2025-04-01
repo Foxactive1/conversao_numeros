@@ -2,26 +2,29 @@ function converter() {
     let numero = document.getElementById("numero").value.trim();
     let baseOrigem = parseInt(document.getElementById("baseOrigem").value);
     let baseDestino = parseInt(document.getElementById("baseDestino").value);
-
-    if (!numero) {
+    
+    if (numero === "") {
         alert("Por favor, insira um número.");
         return;
     }
 
     try {
-        let decimal = parseInt(numero, baseOrigem);
-        if (isNaN(decimal)) throw new Error("Número inválido para a base de origem.");
+        let numeroDecimal = parseInt(numero, baseOrigem);
+        if (isNaN(numeroDecimal)) {
+            alert("Número inválido para a base selecionada.");
+            return;
+        }
 
-        let convertido = decimal.toString(baseDestino).toUpperCase();
-        document.getElementById("resultado").value = convertido;
+        let resultado = numeroDecimal.toString(baseDestino).toUpperCase();
+        document.getElementById("resultado").value = resultado;
     } catch (error) {
-        alert("Erro na conversão: " + error.message);
+        alert("Erro ao converter. Verifique os valores inseridos.");
     }
 }
 
-function limparCampos() {
+function limpar() {
     document.getElementById("numero").value = "";
-    document.getElementById("baseOrigem").value = "10";
-    document.getElementById("baseDestino").value = "10";
     document.getElementById("resultado").value = "";
+    document.getElementById("baseOrigem").selectedIndex = 0;
+    document.getElementById("baseDestino").selectedIndex = 0;
 }
