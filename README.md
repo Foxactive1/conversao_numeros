@@ -4,9 +4,9 @@ Este projeto é uma aplicação web simples e intuitiva que permite a conversão
 
 ## Demonstração
 
-![Screenshot do Conversor](URL_DA_IMAGEM)
+![Screenshot do Conversor](./image.jpg)
 
-Acesse a versão online do projeto: [URL_DA_PAGINA](https://conversao-numeros.vercel.app/)
+Acesse a versão online do projeto: [Abra aqui](https://conversao-numeros.vercel.app/)
 
 ## Funcionalidades
 
