@@ -43,7 +43,6 @@ git clone https://github.com/seu-usuario/conversor-bases.git
 4. Veja o resultado na caixa de saída.
 
 
-
 Licença
 
 Este projeto está licenciado sob a MIT License.
@@ -53,7 +52,3 @@ Este projeto está licenciado sob a MIT License.
 
 Desenvolvido por Dione Castro Alves
 Founder da InNovaIdeia Assessoria em Tecnologia ®
-
-LinkedIn | GitHub | Email
-
-Se quiser, posso gerar também um `LICENSE` padrão MIT para acompanhar o projeto. Deseja?
